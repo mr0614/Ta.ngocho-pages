@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ta.ngocho</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      padding: 48px 20px 72px;
+      background: #0f0f0f;
+      color: #d8d8d8;
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif;
+      line-height: 1.8;
+    }
+    main { max-width: 760px; margin: 0 auto; }
+    h1 { color: #fff; font-size: 34px; margin: 0 0 8px; letter-spacing: 0; }
+    p { font-size: 15px; }
+    a { color: #8bb7ff; text-decoration: none; }
+    .lead { color: #aaa; margin: 0 0 32px; }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 14px;
+      margin-top: 28px;
+    }
+    .card {
+      display: block;
+      min-height: 120px;
+      padding: 20px;
+      border: 1px solid #2d2d2d;
+      border-radius: 12px;
+      background: #171717;
+    }
+    .card strong {
+      display: block;
+      color: #fff;
+      font-size: 17px;
+      margin-bottom: 8px;
+    }
+    .card span {
+      display: block;
+      color: #aaa;
+      font-size: 13px;
+      line-height: 1.7;
+    }
+    .footer {
+      margin-top: 40px;
+      color: #777;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Ta.ngocho</h1>
+    <p class="lead">英語学習用に作ったシンプルな単語帳アプリです。</p>
+    <p>サポート、プライバシーポリシー、利用規約はこちらから確認できます。</p>
+
+    <div class="cards">
+      <a class="card" href="./support.html">
+        <strong>サポート</strong>
+        <span>お問い合わせ、使い方、不具合報告はこちら。</span>
+      </a>
+      <a class="card" href="./legal/privacy.html">
+        <strong>プライバシーポリシー</strong>
+        <span>アプリ内で取り扱う情報について。</span>
+      </a>
+      <a class="card" href="./legal/terms.html">
+        <strong>利用規約</strong>
+        <span>アプリの利用条件について。</span>
+      </a>
+    </div>
+
+    <p class="footer">© 2026 Ta.ngocho</p>
+  </main>
+</body>
+</html>
