@@ -3,52 +3,67 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tang.ocho</title>
+  <title>Tang.ocho - 英語学習用の単語帳アプリ</title>
+  <meta name="description" content="Tang.ochoは、TOEIC頻出単語や日常英会話で使う単語を、レベルや範囲ごとに学習できる英語学習用の単語帳アプリです。" />
   <style>
     * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      min-height: 100vh;
-      padding: 48px 20px 72px;
-      background: #0f0f0f;
-      color: #d8d8d8;
-      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif;
-      line-height: 1.8;
-    }
-    main { max-width: 760px; margin: 0 auto; }
-    h1 { color: #fff; font-size: 34px; margin: 0 0 8px; letter-spacing: 0; }
-    p { font-size: 15px; }
+    body { margin: 0; background: #101318; color: #e9eef5; font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif; line-height: 1.8; }
     a { color: #8bb7ff; text-decoration: none; }
-    .lead { color: #aaa; margin: 0 0 32px; }
-    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; margin-top: 28px; }
-    .card { display: block; min-height: 120px; padding: 20px; border: 1px solid #2d2d2d; border-radius: 12px; background: #171717; }
+    .hero { min-height: 72vh; padding: 64px 20px 42px; display: flex; align-items: center; background: linear-gradient(135deg, #111827 0%, #13251f 52%, #101318 100%); }
+    .inner { width: min(980px, 100%); margin: 0 auto; }
+    .brand { color: #72dfc5; font-size: 14px; font-weight: 800; }
+    h1 { margin: 10px 0 18px; max-width: 760px; color: #fff; font-size: clamp(34px, 7vw, 64px); line-height: 1.12; letter-spacing: 0; }
+    .lead { max-width: 680px; color: #c7d0dc; font-size: 17px; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 10px 18px; border: 1px solid #3b4656; background: #17212b; color: #fff; font-weight: 800; border-radius: 8px; }
+    .btn.primary { background: #72dfc5; color: #08120f; border-color: #72dfc5; }
+    section { padding: 44px 20px; }
+    h2 { margin: 0 0 18px; color: #fff; font-size: 26px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; }
+    .card { border: 1px solid #283241; background: #151b24; padding: 18px; border-radius: 8px; }
     .card strong { display: block; color: #fff; font-size: 17px; margin-bottom: 8px; }
-    .card span { display: block; color: #aaa; font-size: 13px; line-height: 1.7; }
-    .footer { margin-top: 40px; color: #777; font-size: 13px; }
+    .card span { color: #aeb9c8; font-size: 14px; }
+    footer { padding: 28px 20px 48px; border-top: 1px solid #283241; color: #8d99a8; font-size: 13px; }
+    .links { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 10px; }
   </style>
 </head>
 <body>
   <main>
-    <h1>Tang.ocho</h1>
-    <p class="lead">英語学習用に作ったシンプルな単語帳アプリです。</p>
-    <p>サポート、プライバシーポリシー、利用規約はこちらから確認できます。</p>
-
-    <div class="cards">
-      <a class="card" href="./support.html">
-        <strong>サポート</strong>
-        <span>お問い合わせ、使い方、不具合報告はこちら。</span>
-      </a>
-      <a class="card" href="./legal/privacy.html">
-        <strong>プライバシーポリシー</strong>
-        <span>アプリ内で取り扱う情報について。</span>
-      </a>
-      <a class="card" href="./legal/terms.html">
-        <strong>利用規約</strong>
-        <span>アプリの利用条件について。</span>
-      </a>
+    <div class="hero">
+      <div class="inner">
+        <div class="brand">Tang.ocho</div>
+        <h1>よく使う英単語を、見やすく、続けやすく。</h1>
+        <p class="lead">TOEIC頻出単語から日常英会話まで、レベルや範囲ごとに学習できるシンプルな英単語帳アプリです。AI出題や単語ボードで、自分に合った復習をサポートします。</p>
+        <div class="actions">
+          <a class="btn primary" href="https://apps.apple.com/app/id6769251900">App Storeで見る</a>
+          <a class="btn" href="./support.html">サポート</a>
+        </div>
+      </div>
     </div>
 
-    <p class="footer">© 2026 Rmina</p>
+    <section>
+      <div class="inner">
+        <h2>主な機能</h2>
+        <div class="grid">
+          <div class="card"><strong>レベル別の単語学習</strong><span>TOEIC頻出単語や日常英会話で使う単語を、範囲ごとに分けて学習できます。</span></div>
+          <div class="card"><strong>AI出題</strong><span>自分の単語帳づくりや復習を、AI出題機能で効率化できます。</span></div>
+          <div class="card"><strong>単語ボード</strong><span>学習済み、正解済み、マイリスト登録済みの単語を色で確認できます。</span></div>
+          <div class="card"><strong>集中しやすいUI</strong><span>無料版でもバナー広告のみのすっきりした画面で、学習に集中できます。</span></div>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <footer>
+    <div class="inner">
+      <div>© 2026 Rmina</div>
+      <div class="links">
+        <a href="./support.html">サポート</a>
+        <a href="./legal/privacy.html">プライバシーポリシー</a>
+        <a href="./legal/terms.html">利用規約</a>
+        <a href="./app-ads.txt">app-ads.txt</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
